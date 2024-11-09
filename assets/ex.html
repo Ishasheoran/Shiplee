@@ -1,0 +1,130 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .benefits-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            text-align: left;
+        }
+        .benefits-table th, .benefits-table td {
+            padding: 12px;
+            border: 1px solid #ddd;
+        }
+        .benefits-table th {
+            font-weight: bold;
+            background-color: #f4f4f4;
+        }
+        .benefit-icon {
+            font-size: 1.5em;
+            color: #3498db;
+            margin-right: 8px;
+        }
+        .partners-section {
+        padding: 20px;
+        text-align: center;
+    }
+    .partners-section h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+    .partners-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        gap: 20px;
+    }
+    .partner-logo {
+        transition: transform 0.3s;
+        width: 100px;
+        height: auto;
+    }
+    .partner-logo:hover {
+        transform: scale(1.1);
+    }
+    </style>
+</head>
+<body>
+    <h2>Franchise Benefits</h2>
+    <table class="benefits-table">
+        <thead>
+            <tr>
+                <th>Benefit</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><i class="fas fa-shipping-fast benefit-icon"></i> Fast Delivery</td>
+                <td>Quick and reliable shipping solutions.</td>
+            </tr>
+            <tr>
+                <td><i class="fas fa-network-wired benefit-icon"></i> Extensive Network</td>
+                <td>Access to a large network of couriers.</td>
+            </tr>
+            <tr>
+                <td><i class="fas fa-handshake benefit-icon"></i> Partnership Support</td>
+                <td>Comprehensive support for franchise partners.</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="partners-section">
+        <h2>Our Partners</h2>
+        <div class="partners-grid">
+            <img src="path/to/logo1.png" alt="Partner 1" class="partner-logo">
+            <img src="box.png" alt="Partner 2" class="partner-logo">
+            <img src="dollar.png" alt="Partner 3" class="partner-logo">
+            <img src="fast.png" alt="Partner 4" class="partner-logo">
+            Add more logos as needed -->
+        <!-- </div>
+    </div>
+</body>
+</html> -->
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Tooltip</title>
+    <style>
+        /* Tooltip container */
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+        }
+        /* Tooltip text */
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 5px 0;
+            border-radius: 4px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%; /* Position the tooltip above the element */
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        /* Show the tooltip text when hovering over tooltip container */
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="tooltip">
+        Hover over me
+        <div class="tooltiptext">Additional information displayed on hover.</div>
+    </div>
+</body>
+</html>
