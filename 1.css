@@ -100,7 +100,7 @@ button:hover{
  transform: scale(1.1);
 }
 #board{
-  display: flex;justify-content:space-evenly;gap: 10px;
+  display: flex;justify-content:space-evenly;gap: 10px; flex-wrap:wrap;
 }
 body.dark-mode {
   background-color: #121212;color: #ffffff;
@@ -114,10 +114,10 @@ body.dark-mode {
   margin-bottom:20px;
 }
 .partners-grid {
-  display: grid;
+  flex-wrap:wrap;
   display: flex;justify-content:space-evenly;gap: 10px;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  gap: 20px;
+/*   grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
+/*   gap: 20px; */
 }
 .partner-logo {
   transition: transform 0.3s;
